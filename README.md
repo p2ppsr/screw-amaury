@@ -28,18 +28,18 @@ const screwedBCH = screw(Buffer.from('deadbeef20181115'))
 
 #### Table of Contents
 
-*   [screw](#screw)
+*   [index](#index)
     *   [Parameters](#parameters)
 
-### screw
+### index
 
-Given a Buffer as an input, returns a minimally-encoded version of the Buffer, plus any pushdata that may be required.
+Given a Buffer as an input, returns a minimally-encoded version as a hex string, plus any pushdata that may be required.
 
 #### Parameters
 
 *   `buf`  NodeJS Buffer containing an intended Bitcoin script stack element
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Minimally-encoded version of the buffer, plus the correct opcodes required to push it with minimal encoding, if any, in hex string format.
+Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Minimally-encoded version, plus the correct opcodes required to push it with minimal encoding, if any, in hex string format.
 
 ## License
 
